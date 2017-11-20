@@ -7,6 +7,8 @@ import cucumber.api.java.en.When;
 public class Login {
 	@Given("^Launch the browser$")
 	public void launch_the_browser() throws Throwable {
+		
+		System.setProperty("webdriver.gecko.driver","./drivers/geckodriver.exe");
 	   
 	}
 
